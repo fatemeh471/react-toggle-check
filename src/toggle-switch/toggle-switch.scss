@@ -1,0 +1,77 @@
+.toggle-switch {
+  input {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    display: block;
+    position: relative;
+    background: var(--off-background-color, #ccc);
+    border: 1px solid var(--off-border-color);
+
+    &[data-size="large"] {
+      border-radius: 100px;
+      width: 52px;
+      height: 32px;
+    }
+
+    &[data-size="medium"] {
+      border-radius: 75px;
+      width: 39px;
+      height: 24px;
+    }
+
+    &[data-size="small"] {
+      border-radius: 60px;
+      width: 32px;
+      height: 20px;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 4px;
+      background: var(--off-handle-color, #fff);
+      border-radius: 100%;
+    }
+
+    &[data-size="large"]:after {
+      top: 4px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &[data-size="medium"]:after {
+      top: 3px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &[data-size="small"]:after {
+      top: 2px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  input:checked + label {
+    background: var(--on-background-color);
+    border-color: var(--on-border-color);
+  }
+
+  input:not(:checked) + label {
+    border: 1px solid var(--off-border-color);
+  }
+
+  input:not(:checked) + label:after {
+    background: var(--off-handle-color);
+  }
+
+  input:checked + label:after {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+    background: var(--on-handle-color);
+  }
+}

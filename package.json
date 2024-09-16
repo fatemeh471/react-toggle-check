@@ -1,0 +1,126 @@
+{
+  "name": "react-toggle-check",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "NODE_OPTIONS=--max_old_space_size=8192 vite",
+    "build": "tsc && vite build",
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "lint": "yarn lint:fix",
+    "preview": "vite preview",
+    "test": "vitest --run",
+    "test:ui": "vitest --ui",
+    "storybook": "NODE_OPTIONS='--max-old-space-size=4096' storybook dev -p 6006",
+    "build-storybook": "NODE_OPTIONS='--max-old-space-size=8192' storybook build",
+    "publish:nds": "npm publish ."
+  },
+  "dependencies": {
+    "@nds/core": "^0.3.10",
+    "@nds/icons": "^0.2.0",
+    "@nds/nebulox": "^0.3.10",
+    "@tanstack/react-query": "^5.24.8",
+    "lodash": "^4.17.21",
+    "mathjs": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.0",
+    "react-toastify": "^10.0.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "@hookform/resolvers": "^3.3.2",
+    "@nabla/vite-plugin-eslint": "^1.5.0",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@storybook/addon-essentials": "^7.4.2",
+    "@storybook/addon-interactions": "^7.4.2",
+    "@storybook/addon-links": "^7.4.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.4.2",
+    "@storybook/react": "^7.4.2",
+    "@storybook/react-vite": "^7.4.2",
+    "@storybook/testing-library": "^0.2.1",
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^6.1.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.4",
+    "@types/lodash": "^4.14.202",
+    "@types/mocha": "^10.0.1",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "@vitest/coverage-v8": "^1.3.1",
+    "@vitest/ui": "^0.34.6",
+    "autoprefixer": "^10.4.16",
+    "classnames": "^2.3.2",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-storybook": "^0.6.13",
+    "husky": "^8.0.3",
+    "init": "^0.1.2",
+    "jest-mock": "^29.7.0",
+    "jsdom": "^22.1.0",
+    "lint-staged": "^14.0.1",
+    "postcss": "^8.4.31",
+    "prettier": "3.1.0",
+    "prop-types": "^15.8.1",
+    "react-test-renderer": "^18.2.0",
+    "rollup": "^3.28.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.65.1",
+    "sb": "^7.4.1",
+    "storybook": "^7.6.6",
+    "storybook-addon-dark-mode-toggle": "^0.0.6",
+    "storybook-builder-vite": "^0.1.23",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.3",
+    "vite-tsconfig-paths": "^4.2.1",
+    "vitest": "^0.34.2",
+    "yup": "^1.3.3"
+  },
+  "keywords": [
+    "switch",
+    "toggle",
+    "toggle-switch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:fatemeh471/react-toggle-switch.git"
+  },
+  "homepage": "git@github.com:fatemeh471/react-toggle-switch.git",
+  "author": "Fatemeh Eisavand<esavand.fa@gmail.com>",
+  "bugs": {
+    "url": "git@github.com:fatemeh471/react-toggle-switch/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "yarn run lint"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  }
+}

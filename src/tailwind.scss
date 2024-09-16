@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./tooltip/tooltip.scss";
+
+@layer components {
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--nds-sys-color-surface-5));
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+  }
+}
