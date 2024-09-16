@@ -1,13 +1,15 @@
 React Toggle Checked
 react-toggle-checked is a customizable React component that provides an elegant toggle switch. It allows you to create switches with flexible styles and sizes, making it easy to integrate into your React applications.
 
-Installation
-You can install the package via npm or yarn :
+#Installation
+```
 npm install react-toggle-checked
-
 import './style.css
 
-Usage
+```
+
+#Usage
+```
 <ToggleSwitch
 size="medium"
 onBackgroundColor="#40679E"
@@ -17,6 +19,7 @@ offColor="#F6F5F2"
 checked={true}
 onChange={(e) => console.log(e.target.checked)}
 />
+```
 
 | Prop                 | Type          |  Default      |  Description
 | -------------        | ------------- |  ------       |  ------------
