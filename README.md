@@ -3,8 +3,9 @@ react-toggle-checked is a customizable React component that provides an elegant 
 
 #Installation
 ```
-npm install react-toggle-checked
-import './style.css
+import { ToggleSwitch } from  'react-toggle-check'
+import 'react-toggle-check/dist/style.css'
+
 
 ```
 
