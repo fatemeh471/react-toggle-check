@@ -105,12 +105,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:fatemeh471/react-toggle-switch.git"
+    "url": "git@github.com:fatemeh471/react-toggle-check.git"
   },
-  "homepage": "git@github.com:fatemeh471/react-toggle-switch.git",
+  "homepage": "git@github.com:fatemeh471/react-toggle-check.git",
   "author": "Fatemeh Eisavand<esavand.fa@gmail.com>",
   "bugs": {
-    "url": "git@github.com:fatemeh471/react-toggle-switch/issues"
+    "url": "git@github.com:fatemeh471/react-toggle-check/issues"
   },
   "husky": {
     "hooks": {
